@@ -1,0 +1,42 @@
+{
+  "name": "backend-postman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "build": "webpack && node server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.14",
+    "angular": "^1.6.9",
+    "angular-bootstrap-npm": "^0.14.3",
+    "angular-resource": "^1.6.9",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.0.0",
+    "cors": "*",
+    "express": "^4.16.2",
+    "jquery": "^3.3.1",
+    "jsonwebtoken": "*",
+    "mongodb": "^3.0.1",
+    "mongoose": "^5.0.1",
+    "ngstorage": "^0.3.11",
+    "passport": "^0.4.0",
+    "passport-jwt": "*",
+    "passport-local": "^1.0.0",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "morgan": "^1.9.0",
+    "style-loader": "^0.21.0"
+  }
+}

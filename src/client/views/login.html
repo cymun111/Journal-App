@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <button class="btn-lg" type="button" ng-click="showMe=true">Login</button>
+      </li>
+      <li class="nav-item">
+        <a ng-href="/users/register" class="btn btn-lg">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </nav>
+<div class="testing">
+  <div>
+    <h1 class="text-center welcome">Welcome to the Journal</h1>
+  </div>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                      <!-- form card login -->
+                    <div ng-show="showMe" class="card rounded-5">
+                        <div class="card-header">
+                            <h3 class="mb-0">Login</h3>
+                          </div>
+                        <div class="card-body">
+                            <form class="form" role="form" method="POST">
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control form-control-lg rounded-1" name="username" ng-model="Acontroller.username" required="">
+                                    <div class="invalid-feedback">Oops, you missed this one.</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control form-control-lg rounded-1" name="password" ng-model="Acontroller.password" required="">
+                                    <div class="invalid-feedback">Enter your password too!</div>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-lg float-right" ng-click="Acontroller.login()">Login</button>
+                            </form>
+                        </div>
+                        <!--/card-block-->
+                      </div>
+                      <!-- /form card login -->
+                    </div>
+
+
+              </div>
+              <!--/row-->
+
+          </div>
+          <!--/col-->
+      </div>
+      <!--/row-->
+    </div>
+<!--/container-->
+</div>

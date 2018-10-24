@@ -1,0 +1,26 @@
+body, html {
+    height: 100%;
+    background-image: url("/images/login-img.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome {
+  font-family: fantasy;
+  font-size: 5em;
+}
+
+input{
+  text-align: center;
+}
+
+#css-mood{
+  width: 15%;
+  
+}
